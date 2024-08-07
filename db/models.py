@@ -9,4 +9,4 @@ class User(Base):
 
     uid: int = Column(Integer, unique=True)
     login: str = Column(String, unique=True)
-    hashed_password: str = Column(String)
+    password: str = Column(String)
